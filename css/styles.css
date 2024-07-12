@@ -9,6 +9,7 @@
   --white: #fefae0 ;
   --lightBrown: #dda15e;
   --darkBrown: #bc6c25;
+  --lightergrn: #81A263;
 
   --color1: #365E32 ;
   --color2: #81A263 ;
@@ -57,20 +58,21 @@ header { padding: 0 15px;position: relative;}
 
 
 nav { padding: 0 15px;}
-ul.nav_menu {     padding: 20px 0;}
-ul.nav_menu li { display: inline-block;vertical-align: middle; position: relative; padding: 0 10px;}
-ul.nav_menu li a{   display: block;   font-size: 22px;   font-weight: 400;   color: #000;   text-transform: capitalize;   line-height: 60px;    position: relative;   text-decoration: none;   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;  }
+.nav_menu {     padding: 20px 0;}
+.nav_menu li { display: inline-block;vertical-align: middle; position: relative; padding: 0 10px;}
+.nav_menu li a{   display: block;   font-size: 22px;   font-weight: 400;   color: #000;   text-transform: capitalize;   line-height: 60px;    position: relative;   text-decoration: none;   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;  }
 
-ul.nav_menu li a::before {     content: ''; position: absolute;  width: 100%; height: 3px; border-radius: 4px; background-color: var(--darkBrown); bottom: 15px; left: 0; transform-origin: right; transform: scaleX(0); transition: transform .3s ease-in-out; right: 0;margin: 0 auto; z-index: -1;}
-ul.nav_menu li a:hover::before { transform-origin: left; transform: scaleX(1); }
+.nav_menu li a::before {     content: ''; position: absolute;  width: 100%; height: 3px; border-radius: 4px; background-color: var(--lightergrn); bottom: 15px; left: 0; transform-origin: right; transform: scaleX(0); transition: transform .3s ease-in-out; right: 0;margin: 0 auto; z-index: -1;}
+.nav_menu li a:hover::before { transform-origin: left; transform: scaleX(1); }
 
-.nav_menu .nav_item a:active,  .nav_menu .nav_item a:hover { color: var(--darkBrown); }
+.nav_menu .nav_item a:active,  .nav_menu .nav_item a:hover { color: var(--lightergrn); }
 
-ul.nav_menu li:first-child { padding-left: 0; }
-ul.nav_menu li:last-child { padding-right: 0; }
+.nav_menu li:first-child { padding-left: 0; }
+.nav_menu li:last-child { padding-right: 0; }
 
 
-.hamburger_menu { display: none;}
+#hamburger_menu { display: none; cursor: pointer; }
+.bar { display: block; background: var(--darkBrown); width: 30px; height: 3px; margin: 5px auto; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
 
 #main_intro {  margin-top: 115px;}
@@ -150,7 +152,7 @@ footer { background: var(--white); padding: 50px 15px;}
 .ftr_menu li  { display: inline-block;vertical-align: middle; position: relative; padding: 0 40px;}
 .ftr_menu li a {  display: block;   font-size: 22px;   font-weight: 400;   color: #000;   text-transform: capitalize;   line-height: 100%;    position: relative;   text-decoration: none;   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
 
-ul.ftr_menu li a::before {     content: ''; position: absolute;  width: 100%; height: 3px; border-radius: 4px; background-color: var(--darkBrown); bottom: -2px; left: 0; transform-origin: right; transform: scaleX(0); transition: transform .3s ease-in-out; right: 0;margin: 0 auto; }
+ul.ftr_menu li a::before {     content: ''; position: absolute;  width: 100%; height: 3px; border-radius: 4px; background-color: var(--lightergrn); bottom: -2px; left: 0; transform-origin: right; transform: scaleX(0); transition: transform .3s ease-in-out; right: 0;margin: 0 auto; }
 ul.ftr_menu li a:hover::before { transform-origin: left; transform: scaleX(1); }
 
-.ftr_menu li a:active,  .ftr_menu li a:hover { color: var(--darkBrown); }
+.ftr_menu li a:active,  .ftr_menu li a:hover { color: var(--lightergrn); }
