@@ -4,27 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/media.css">
 
   <title>Rosvie - Portfolio</title>
 
-
-
 </head>
 
+
 <body>
-
-
   <div class="header_holder">
-
     <header>
-
-      <div class="container">
-
+      <div class="wrapper">
         <div class="social_media">
-
           <a href="https://www.facebook.com/rosvie.ruizo.pepito/" target="_blank">
             <figure><img src="images/icons/facebook-icon.png" alt="facebook"></figure>
           </a>
@@ -37,54 +29,32 @@
           <a href="mailto:pepitorosvie@gmail.com" target="_blank">
             <figure><img src="images/icons/gmail-icon.png" alt="gmail.png"></figure>
           </a>
-
         </div>
-
       </div>
-
     </header>
-
     <nav>
-
-      <div class="container">
-
+      <div class="wrapper">
         <div id="navbar">
-
           <ul class="nav_menu">
-
-            <li class="nav_item">
-              <a href="#main_intro" class="nav_link">About</a>
-            </li>
-            <li class="nav_item">
-              <a href="#skills" class="nav_link">Skills</a>
-            </li>
-            <li class="nav_item">
-              <a href="#projects" class="nav_link">Projects</a>
-            </li>
-            <li class="nav_item">
-              <a href="#contact" class="nav_link">Contact</a>
-            </li>
-
+            <li class="nav_item"><a href="#main_intro" class="nav_link">About</a></li>
+            <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+            <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+            <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
           </ul>
-
           <div id="hamburger_menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-
         </div>
-
       </div>
-
     </nav>
-
   </div>
 
+  
+  <div id="main_intro" class="p_relative px_15">
 
-
-  <div id="main_intro" class=" p_relative px_20">
-    <div class="sub_container">
+    <div class="wrapper">
 
       <div class="dev_con p_relative text_center">
 
@@ -106,20 +76,13 @@
 
         </div>
 
-
-
       </div>
-
-
-
-
-
 
     </div>
   </div>
 
-  <div id="skills" class="px_20">
-    <div class="container">
+  <div id="skills" class="px_15">
+    <div class="wrapper">
 
       <div class="skill_con">
 
@@ -136,8 +99,8 @@
     </div>
   </div>
 
-  <div id="projects" class="p_relative px_20">
-    <div class="container sub_container">
+  <div id="projects" class="p_relative px_15">
+    <div class="wrapper">
 
       <div class="proj_con p_relative">
 
@@ -149,38 +112,29 @@
           </div>
         </div>
 
-        <a href="https://www.benisons.net/" target="_blank">
-          <figure><img src="images/project3.png" alt="project website"></figure>
-        </a>
+        <div class="slider">
 
-        <!-- <a href="https://www.2sistershomehealth.org/" target="_blank">
-          <figure><img src="images/project1.png" alt="project website"></figure>
-        </a> -->
+          <div class="slide1 slide">
 
-        <!-- <a href="https://w01194.proweaver.site/" target="_blank">
-          <figure><img src="images/project2.png" alt="project website"></figure>
-        </a>
-        
-        <a href="https://www.benisons.net/" target="_blank">
-          <figure><img src="images/project3.png" alt="project website"></figure>
-        </a>
+            <a href="https://www.benisons.net/" target="_blank">
+              <figure><img src="images/project3.png" alt="project website"></figure>
+            </a>
 
-        <a href="https://w13558.proweaversite13.com/" target="_blank">
-          <figure><img src="images/project4.png" alt="project website"></figure>
-        </a> -->
+          </div>
 
+        </div>
 
       </div>
-
 
     </div>
   </div>
 
+  
+  <div id="contact" class="px_15">
+    
+    <div class="wrapper">
 
-  <div id="contact">
-    <div class="container w-100 ">
-
-      <div class="contact_con px_20">
+      <div class="contact_con">
 
         <div class="marquee_holder">
 
@@ -245,10 +199,10 @@
             <h2>Let's Connect</h2>
           </div>
 
-          <form action="" id="contactForm">
+          <form id="contactForm">
 
             <input type="text" placeholder="Name">
-            <input type="mail" placeholder="Email Address">
+            <input type="email" placeholder="Email Address">
             <textarea name="message" id="" placeholder="Feel free to leave a message."></textarea>
 
             <button class="btn">Send</button>
@@ -290,23 +244,7 @@
 
   </footer>
 
-
-
-  <script src="js/javascript.js"></script>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-
-
-
+<script src="js/javascript.js"></script>
 
 </body>
 

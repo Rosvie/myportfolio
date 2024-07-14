@@ -8,8 +8,6 @@ and (max-width : 1420px) {
 @media only screen
 and (max-width : 1200px) {
 
-    .social_media { right: 35px;}
-
     .dev_info p {   width: 90%; }
     .skill_con { flex-wrap: wrap;}
 
@@ -34,9 +32,11 @@ and (max-width : 800px) {
 
     .header_holder { position: relative;     left: unset;     top: unset;     right: unset;}
 
-    header .container { padding: 20px 0; }
+    header .container { }
 
-    .social_media {  padding: 0; text-align: center;  justify-content: center; right: 0; }
+    .social_media {  padding: 0;  right: 0; top: 39px; }
+
+    nav {padding: 40px 15px;}
 
     /* Toggle Menu */
     .nav_menu {  margin: 0;     padding: 100px 10px 30px;     text-align: center;     position: fixed;     left: -900px;     top: 0;     gap: 0;    width: fit-content;   background: #fff;     transition: 0.3s;     height: 100vh;}
@@ -79,5 +79,6 @@ and (max-width : 600px) {
     .marque_items { width: 100%; }
     .marque_items figure img { width: 100%; }
 
-  
+    .ftr_menu li {width: 100%;  }
+    
 }
