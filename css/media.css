@@ -56,7 +56,11 @@ and (max-width : 800px) {
 
     /* Toggle Menu */
 
-    #main_intro { margin: 0;}
+    #main_intro { margin: 0;margin-top: 115px;}
+
+    .skill_con { padding: 60px 0;}
+
+    .proj_card { width: 100%; } 
     
 
     .ftr_menu { margin: 0;     padding: 0 5px;     text-align: center; }

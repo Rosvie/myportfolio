@@ -60,7 +60,7 @@ p {line-height: 130%; }
 .top_round span { display: block; border-radius: 50%; width: 10px; height: 10px; background: #fefae0 ; }
 
 
-.header_holder { position: fixed;   left: 0;   right: 0;   top: 0;   z-index: 2;   border-radius: 0 0 20px 20px;   background: rgba(254, 250, 224, 0.2);   backdrop-filter: blur(5px);   -webkit-backdrop-filter: blur(5px); min-height: 100px; }
+.header_holder {   left: 0;   right: 0;   top: 0;   z-index: 2;   border-radius: 0 0 20px 20px;   background: rgba(254, 250, 224, 0.2);   backdrop-filter: blur(5px);   -webkit-backdrop-filter: blur(5px); min-height: 100px; }
 header { padding: 0 15px;position: relative;}
   .social_media { display: flex;justify-content: end;gap: 10px;align-items: center;position: absolute;top: 45px;right: 0;z-index: 2;}
   .social_media figure  { }
@@ -101,22 +101,41 @@ nav { padding: 0 15px;}
 
   #skills, #projects { padding: 0 15px;}
   
-  .skill_con { display: flex;justify-content: center;gap: 25px;align-items: center;padding: 30px 0;}
+  .skill_con { display: flex;justify-content: center;gap: 25px;align-items: center;padding: 200px 0;}
   .skill_con figure { background: transparent;padding: 20px;border-radius: 20px;transition: 0.5s ease;position: relative;}
   .skill_con figure img {  width: 100px; transition: 0.5s ease; }
   .skill_con figure img:hover { transform: scale(1.3); filter: brightness(1.3); }
 
   #projects { }
 
-  .proj_con { max-width: 989px;width: 100%;margin: 0 auto;  padding-bottom: 50px;}
+  .proj_con { max-width: 1500px;width: 100%;margin: 0 auto;  padding-bottom: 50px;}
 
-  .proj_con figure  {border: 2px solid #606c38;  border-radius: 0 0 20px 20px;overflow: hidden;position: relative;}
-  .proj_con figure img { max-width: 100%;height: 55vh;}
+  .proj_subcon { border-radius: 0 0 20px 20px;border: 2px solid var(--lightGreen);}
+.proj_subcon h2 { margin: 20px auto;}
+
+  .proj_holder { display: flex;justify-content: center;gap: 20px;margin: 40px 25px; flex-wrap: wrap; }
+  .proj_card { max-width: 350px;width: 48%;text-align: center;border-radius: 20px;padding: 30px 10px;position: relative; transition: all .3s ease-in;   box-shadow: 5px 0px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.1);font-family: var(--priFont);background: #fff;}
+  .proj_card:hover { transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.1); }
+
+  .proj_card figure { }
+  .proj_card figure img.proj_frame{ width: 100%;}
+
+  .proj_img { max-width: 300px;   height: 400px; overflow: hidden; border-radius: 20px;display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;margin: 0 auto;}
+  .proj_card iframe { width: 300px;   height: 400px; }
+
+  .proj_info { border-top: 1px solid var(--lightergrn); margin-top: 30px;}
+
+  .proj_card h2 { font-size: 25px;min-height: 70px;margin: 0;display: flex;justify-content: center;flex-direction: column;}
+  .proj_card p { }
+  .proj_card a { position: absolute;inset: 0;}
+
+
   
   #contact { background: var(--darkGreen);}
-  .contact_con {  display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+  .contact_con {  }
   
-  .marquee_holder {max-width: 520px;width: 100%;height: 786px;position: relative;display: flex;justify-content: start;gap: 5px;overflow: hidden;}
+  .marquee_holder {  max-width: 520px;width: 100%;height: 786px;position: relative;display: flex;justify-content: start;gap: 5px;overflow: hidden; display: none !important;}
   .marquee_toup { max-width: 327px;height: 786px;width: 100%; position: relative;}
   .marquee_todown {  max-width: 251px;height: 786px;width: 100%; position: relative; }
   
@@ -134,17 +153,8 @@ nav { padding: 0 15px;}
   
   .reverse { animation-direction: reverse; }
   
-  .contact_form { max-width: 600px;border: 2px solid var(--lightGreen);background: transparent;backdrop-filter: blur(5px);border-radius: 25px;width: 100%;}
-  .contact_heading { padding: 30px 0;color: #fff;}
-  #contactForm { padding: 10px 25px; display: flex; justify-content: space-between; gap: 30px 10px; flex-wrap: wrap;}
-  
-  #contactForm input { width: 46%;}
-  #contactForm textarea { width: 100%;height: 50px !important;padding-top: 15px;}
-  #contactForm input, #contactForm textarea { height: 50px;border-radius: 10px;border: 0;padding-left: 12px;overflow: hidden;font-family: var(--priFont);}
-  #contactForm input[type="text"] { }
-  #contactForm input[type="email"] { }
-  #contactForm button { margin: 0 auto 20px;width: 150px;}
-  #contactForm button:hover { }
+  .cnt_mail {    position: fixed;right: 30px;bottom: 30px;}
+
 
 footer { background: var(--white); padding: 50px 15px;}
 .ftr_menu { text-align: center;}
